@@ -1,0 +1,143 @@
+  <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="Cours.css">
+  </head>
+  <body>
+    <fieldset>
+      <legend>LOGIN</legend>
+      <form method="post">
+        <div class="d">
+          <label for="tt" class="user name">username</label>
+          <input
+            id="tt"
+            type="text"
+            placeholder="enter your name"
+            required
+            name="user"
+            maxlength="20"
+          />
+        </div>  
+        <div class="d2">
+          <label for="pp">password</label>
+          <input
+            id="pp"
+            type="password"
+            placeholder="enter your password"
+            required
+            name="password"
+            minlength="8"
+            maxlength="15"
+          />
+        </div>
+        <input type="submit" value="send" />
+      </form>
+    </fieldset>
+  <br>
+  <br>
+    <form>
+      <div>
+        <label for="datetime-local">TIME</label>
+        <input id="datetime-local" type="datetime-local" />
+      </div>
+    </form>
+  <br>
+  <br>
+    <form>
+      <h2>What is your favorite language</h2>
+      <div>
+        <input id="English" type="radio" value="English" name="language" />
+        <label for="English">English</label>
+      </div>
+      <div>
+        <input id="Arabic" type="radio" value="Arabic" name="language" />
+        <label for="Arabic">Arabic</label>
+      </div>
+      <div>
+        <input id="Spain=" type="radio" value="Spain" name="language" />
+        <label for="Spain">Spain</label>
+      </div>
+      <div>
+        <input id="Franc" type="radio" value="Franc" name="language" />
+        <label for="Franc">Franc</label>
+      </div>
+      <input type="submit" value="send" />
+    </form>
+  <br>
+  <br>
+    <form>
+      <label for="cr">Choose a car:</label>
+      <select name="car" id="cr">
+        <optgroup label="German Cars">
+          <option value="fiat">Fiat</option>
+          <option value="ferrari">Ferrari</option>
+          <option value="lamborghini">Lamborghini</option>
+        </optgroup>
+        <optgroup label="Italian Cars">
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="mercedes">Mercedes</option>
+          <option value="audi">Audi</option>
+        </optgroup>
+        <optgroup label="Swedish Cars">
+          <option value="bmw">BMW</option>
+          <option value="vw">VW</option>
+        </optgroup>
+      </select>
+      <br />
+      <br />
+      <input list="browsers" name="brow" />
+      <datalist id="browsers">
+        <option value="Edge"></option>
+        <option value="Firefox"></option>
+        <option value="Chrome"></option>
+        <option value="Opera"></option>
+        <option value="Safari"></option>
+      </datalist>
+
+      <input type="submit" />
+    </form>
+  <br>
+  <br>
+    <form method="post">
+      <div>
+        <input type="text" name="title" placeholder="title" required />
+      </div>
+      <br />
+  <br>
+      <div>
+        <textarea
+          name="content"
+          placeholder="content..."
+          rows="4"
+          required
+        ></textarea>
+      </div>
+      <input type="submit" value="send" />
+    </form>
+    <br />
+    <div>
+  <a download href="img.png"> img</a>
+
+<a download href="video/video.mp4"> video</a>
+
+ <a download href="audio/khfsh.mp3"> audio</a>
+
+    <a download href="file/Halkot.pdf"> file</a>
+</div>
+    <br />
+    <iframe
+      width="1280"
+      height="720"
+      src="https://www.youtube.com/embed/o6As7cP3eIo"
+      title="#25 كورس html كامل بالعربي |  الفرق بين iframe و بين embed و بين object"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></ifr  ame>
+  </body>
+</html>
