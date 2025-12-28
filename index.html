@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CRUD.css">
-    <title>java,   script</title>
+    <title>SALE_PRODUCTS</title>
    
 </head>
 <body>
@@ -19,13 +19,13 @@
 
 
 <div class="inputs" >
-    <input type="text" id="title" placeholder="titel">
+    <input type="text" id="title" placeholder="title">
     <div class="price">
 <input onkeyup="getTotle()" type="number" id="price" placeholder="price">
 <input onkeyup="getTotle()" type="number" id="taxes" placeholder="taxes">
 <input onkeyup="getTotle()" type="number" id="ads" placeholder="ads">
 <input onkeyup="getTotle()" type="number" id="discount" placeholder="discount">
-<small id="total">2002</small>
+<small id="total"></small>
 </div>
   <input type="number" id="count" placeholder="count">
   <input type="text" id="category" placeholder="category">
@@ -38,12 +38,15 @@
 
 <div class="outputs">
 <div>
-    <input type="text" class="search" placeholder="search">
+    <input onkeyup="SD(this.value)" type="text" id="search" placeholder="search">
     <div class="btnsear">
-    <button id="bytitel">Serach By Title</button>
-    <button id="bycat">Serach By Category</button>
+    <button onclick="getsearch(this.id)" id="btitle">Serach By Title</button>
+    <button onclick="getsearch(this.id)" id="bcat">Serach By Category</button>
     </div>
 </div> 
+<div id="deletAll">
+
+</div>
  <table>
     <tr>
         <th>ID</th>
@@ -56,73 +59,9 @@
         <th>UPDATE</th>
         <th>DELET</th>
     </tr>
-<TBODY>
-    <td>1</td>
-    <td>iphone</td>
-    <td>1000</td>
-    <td>200</td>
-    <td>300</td>
-    <td>900</td>
-    <td>phone</td>
-    <td><button id="update">Update</button></td>
-    <td><button id="delet">Delet</button></td>
+<TBODY id="tbody">
+ 
 </TBODY>
-<TBODY>
-    <td>1</td>
-    <td>iphone</td>
-    <td>1000</td>
-    <td>200</td>
-    <td>300</td>
-    <td>900</td>
-    <td>phone</td>
-    <td><button id="update">Update</button></td>
-    <td><button id="delet">Delet</button></td>
-</TBODY>
-<TBODY>
-    <td>1</td>
-    <td>iphone</td>
-    <td>1000</td>
-    <td>200</td>
-    <td>300</td>
-    <td>900</td>
-    <td>phone</td>
-    <td><button id="update">Update</button></td>
-    <td><button id="delet">Delet</button></td>
-</TBODY>
-<TBODY>
-    <td>1</td>
-    <td>iphone</td>
-    <td>1000</td>
-    <td>200</td>
-    <td>300</td>
-    <td>900</td>
-    <td>phone</td>
-    <td><button id="update">Update</button></td>
-    <td><button id="delet">Delet</button></td>
-</TBODY>
-<TBODY>
-    <td>1</td>
-    <td>iphone</td>
-    <td>1000</td>
-    <td>200</td>
-    <td>300</td>
-    <td>900</td>
-    <td>phone</td>
-    <td><button id="update">Update</button></td>
-    <td><button id="delet">Delet</button></td>
-</TBODY>
-<TBODY>
-    <td>1</td>
-    <td>iphone</td>
-    <td>1000</td>
-    <td>200</td>
-    <td>300</td>
-    <td>900</td>
-    <td>phone</td>
-    <td><button id="update">Update</button></td>
-    <td><button id="delet">Delet</button></td>
-</TBODY>
-
  </table>
 
 </div>
